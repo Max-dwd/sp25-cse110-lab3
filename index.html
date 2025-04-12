@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>  
+        <title> Meeting Note </title>
+        <meta charset="UTF-8"> 
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    </head>
+
+    <body>
+        <div style="background-color: lightblue; padding: 10px;">
+            <h1> Team X First Meeting </h1>
+            <time > 4/11/25 </time>
+            <p> Room: XX </p>
+            
+        </div>
+        
+        <main>
+            <p> Today's meeting focused on ... </p>
+        </main>
+        
+        <header>
+            <h3> Quick Link </h3>
+            <nav>
+              <ul>
+                <li><a href="#Meet each other">Meet each other</a></li>
+                <li><a href="#Check-ins">Check-ins</a></li>
+                <li><a href="#Agenda">Agenda</a></li>
+                <li><a href="#Brainstorming">Brainstorming</a></li>
+                <li><a href="#Summary">Summary</a></li>
+                <li><a href="#Opinion">Opinion</a></li>
+              </ul>
+            </nav>
+        </header>
+
+        <section id="Meet each other">
+            <h2> Meet each others </h2>
+            Introduce:
+            <ol>
+                <li> name  </li>
+                <li> hobby </li>
+                <li> major </li>
+            </ol>
+        </section>
+
+        <section id="Check-ins">
+            <h2> Check-ins </h2>
+            <ul> 
+                <li> <input type="checkbox" /> Amy </li>
+                <li> <input type="checkbox" /> Bob </li>
+                <li> <input type="checkbox" /> ... </li> 
+            </ul>
+        </section>
+
+        <section id="Agenda">
+            <h2> Agenda </h2>
+            
+            <p>Everyone joined the meeting on time.</p>
+            <p>
+                <b> Briefly introduced to each other. </b>
+                <br>
+                Brainstormed together the keys of <strong>team development</strong>.
+                <br>
+                Learned various <i>communication tools</i>.
+                <br>
+                People <em>must try</em> to send comments by next Friday.
+                <br>
+                We will go over <span>development tool introduction</span> tomorrow.
+            </p>
+        </section>
+
+        <section id="Brainstorming">
+            
+            <h2> Brainstorming </h2>
+            <img src="https://www.leadershipsuccess.co/hubfs/Stages%20of%20team%20development.png" width="250px"/>
+        </section>
+        
+        <section id="Summary">
+            <h2> Summary </h2>
+            <details>
+                <summary>Team Development</summary>
+                ...
+            </details>
+            <details>
+                <summary>Communication</summary>
+                ...
+            </details>
+            
+            <hr>
+
+            <audio controls src="UC San Diego 2.m4a"></audio>
+            
+            <video controls width="250">
+                <source src="IMG_0735.MP4" type="video/mp4" />
+            </video>
+        </section>
+
+        <section id="Opinion">
+            <h2> Opinion </h2>
+            <form>
+                <fieldset>
+                    <legend> Fill in the information </legend>
+                    <input type="text" style="margin-right: 10px;" id="name" placeholder="Name"/>
+
+                    <input 
+                        list="pronoun-select" 
+                        style="margin-right: 10px;" 
+                        id="pronoun-choice" 
+                        name="pronoun-choice" 
+                        placeholder="Pronoun" />
+                    <datalist id="pronoun-select">
+                        <option value="Mr."></option>
+                        <option value="Ms."></option>
+                    </datalist>
+
+                    <select name="subgroup" id="subgroup-select">
+                        <option value="">--Please select your subgroup--</option>
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                    </select>
+
+                    <input type="checkbox" id="public">
+                    <label style="margin-right: 10px;"> Public </label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Send</legend>
+                  
+                    <div>
+                        <input type="radio"/>
+                        <label>Now</label>
+                    </div>
+
+                    <div>
+                        <input type="radio"/>
+                        <label>At date:</label>
+                        <input type="date"/>
+                    </div>
+                  </fieldset>
+                  
+                <label> Comment </label>
+                <br>
+                <textarea> </textarea>
+                <button>Submit</button>
+            </form>
+            
+        </section>
+
+        <footer>
+            <div>&copy; XX</div>            
+        </footer>
+
+    </body>
+</html>
