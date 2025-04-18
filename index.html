@@ -3,11 +3,14 @@
     <head>  
         <title> Meeting Note </title>
         <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <div style="background-color: lightblue; padding: 10px;">
+        <div style="background-color: lightblue;" class = "head">
             <h1> Team X First Meeting </h1>
             <time datetime="2025-04-11"> 4/11/25 </time>
             <p> Room: XX </p>
@@ -15,7 +18,8 @@
         </div>
         
         <main>
-            <p> Today's meeting focused on ... </p>
+            <p id="focus"> Today's meeting focused on ... </p>
+            <p> Don't forget to leave your comment at the bopttom. </p> 
         </main>
         
         <header>
@@ -44,18 +48,39 @@
 
         <section id="Check-ins">
             <h2> Check-ins </h2>
-            <ul> 
-                <li> <input type="checkbox" /> Amy </li>
-                <li> <input type="checkbox" /> Bob </li>
-                <li> <input type="checkbox" /> ... </li> 
-            </ul>
+            <div class="checkbox-grid">
+                <div class="checkbox">
+                    <p>Group 1</p>
+                    <ul> 
+                        <li> <input type="checkbox" /> Amy </li>
+                        <li> <input type="checkbox" /> Bob </li>
+                        <li> <input type="checkbox" /> ... </li> 
+                    </ul>
+                </div>
+                <div class="checkbox">
+                    <p>Group 2</p>
+                    <ul> 
+                        <li> <input type="checkbox" /> Kate </li>
+                        <li> <input type="checkbox" /> ... </li>
+                        <li> <input type="checkbox" /> ... </li> 
+                    </ul>
+                </div>
+                <div class="checkbox">
+                    <p>Group 3</p>
+                    <ul> 
+                        <li> <input type="checkbox" /> Joe </li>
+                        <li> <input type="checkbox" /> ... </li>
+                        <li> <input type="checkbox" /> ... </li> 
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="Agenda">
             <h2> Agenda </h2>
             
             <p>Everyone joined the meeting on time.</p>
-            <p>
+            <p id="content">
                 <b> Briefly introduced to each other. </b>
                 <br>
                 Brainstormed together the keys of <strong>team development</strong>.
@@ -78,8 +103,9 @@
         
         <section id="Summary">
             <h2> Summary </h2>
-            <details>
+            <details id="details">
                 <summary>Team Development</summary>
+                ...
                 ...
             </details>
             <details>
@@ -99,7 +125,7 @@
         <section id="Opinion">
             <h2> Opinion </h2>
             <form>
-                <fieldset>
+                <fieldset class="box">
                     <legend> Fill in the information </legend>
                     <input type="text" style="margin-right: 10px;" id="name" placeholder="Name"/>
 
@@ -126,7 +152,7 @@
 
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="box">
                     <legend>Send</legend>
                   
                     <div>
@@ -144,9 +170,18 @@
                 <label> Comment </label>
                 <br>
                 <textarea> </textarea>
-                <button>Submit</button>
+                <button class="submit">Submit</button>
             </form>
             
+        </section>
+
+        <section>
+            <h2> Are you satisfying with the design? </h2>
+            <div class="flex-container">
+                <div><button class = "flex-item">👍</button></div>
+                <div><button class = "flex-item">🫥</button></div>
+                <div><button class = "flex-item">👎</button></div>
+            </div>
         </section>
 
         <footer>
