@@ -11,7 +11,7 @@ body {
     max-width: 70vw;
     min-width: 300px;
     background-color: #b3cce6; /* fallback */
-    background-color: color(display-p3 0.7 0.8 0.9); /* modern */
+    /* background-color: color(display-p3 0.7 0.8 0.9); */ /* modern, commented out */
     margin-left: auto;
     margin-right: auto;
 }
@@ -20,7 +20,7 @@ button {
     font-size: 1.3em;
     width: 10ch;
     background-color: purple; /* fallback */
-    background-color: color-mix(in srgb, blue 50%, red 50%);
+    /* background-color: color-mix(in srgb, blue 50%, red 50%); */ /* modern, commented out */
     border: 2px solid #FF6347;
     border-radius: 10px;
     text-align: center;
